@@ -1,0 +1,57 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Ink and Ideas home" [ref=e3] [cursor=pointer]:
+      - /url: "#top"
+      - text: Ink & Ideas
+    - navigation "Primary navigation" [ref=e4]:
+      - link "Stories" [ref=e5] [cursor=pointer]:
+        - /url: "#blog"
+      - link "About" [ref=e6] [cursor=pointer]:
+        - /url: "#about"
+      - link "Contact" [ref=e7] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=e8]:
+    - region [ref=e9]:
+      - paragraph [ref=e10]: A community for curious minds
+      - heading "Ideas worth reading. Stories worth sharing." [level=1] [ref=e11]: Ideas worth reading.Stories worth sharing.
+      - paragraph [ref=e12]: Discover thoughtful writing from independent bloggers, creators, and everyday observers.
+      - link "Explore stories" [ref=e13] [cursor=pointer]:
+        - /url: "#blog"
+    - region [ref=e14]:
+      - generic [ref=e15]:
+        - paragraph [ref=e16]: From the community
+        - heading "Latest stories" [level=2] [ref=e17]
+      - generic [ref=e18]:
+        - article [ref=e19]:
+          - paragraph [ref=e20]: Creativity
+          - heading "Making room for better ideas" [level=3] [ref=e21]
+          - paragraph [ref=e22]: Small rituals can create the space needed for meaningful work and fresh thinking.
+          - link "Read Making room for better ideas" [ref=e23] [cursor=pointer]:
+            - /url: "#blog"
+            - text: Read story →
+        - article [ref=e24]:
+          - paragraph [ref=e25]: Perspective
+          - heading "The quiet power of starting small" [level=3] [ref=e26]
+          - paragraph [ref=e27]: Progress does not need to be loud. It only needs a beginning and a little consistency.
+          - link "Read The quiet power of starting small" [ref=e28] [cursor=pointer]:
+            - /url: "#blog"
+            - text: Read story →
+        - article [ref=e29]:
+          - paragraph [ref=e30]: Lifestyle
+          - heading "Notes from a slower morning" [level=3] [ref=e31]
+          - paragraph [ref=e32]: A reflective morning can change the rhythm of an entire day.
+          - link "Read Notes from a slower morning" [ref=e33] [cursor=pointer]:
+            - /url: "#blog"
+            - text: Read story →
+  - contentinfo [ref=e34]:
+    - generic [ref=e35]:
+      - paragraph [ref=e36]: Ink & Ideas
+      - paragraph [ref=e37]: Stories, perspectives, and ideas from independent voices.
+    - generic [ref=e38]:
+      - link "About us" [ref=e39] [cursor=pointer]:
+        - /url: "#about"
+      - link "Contact" [ref=e40] [cursor=pointer]:
+        - /url: "#contact"
+      - link "Back to top ↑" [ref=e41] [cursor=pointer]:
+        - /url: "#top"
+    - paragraph [ref=e42]: © 2026 Ink & Ideas

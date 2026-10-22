@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ink &amp; Ideas</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Ink and Ideas home">Ink &amp; Ideas</a>
+      <nav aria-label="Primary navigation">
+        <a href="#blog">Stories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button id="sign-in-button" class="auth-button" type="button">Sign in with Google</button>
+        <div id="user-menu" class="user-menu" hidden>
+          <span id="user-summary"></span>
+          <button id="sign-out-button" class="auth-button secondary" type="button">Sign out</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">A community for curious minds</p>
+        <h1 id="hero-title">Ideas worth reading.<br />Stories worth sharing.</h1>
+        <p class="hero-copy">Discover thoughtful writing from independent bloggers, creators, and everyday observers.</p>
+        <a class="button" href="#blog">Explore stories</a>
+      </section>
+
+      <section id="blog" class="blog-section" aria-labelledby="blog-title">
+        <div class="section-heading">
+          <p class="eyebrow">From the community</p>
+          <h2 id="blog-title">Latest stories</h2>
+        </div>
+        <p id="blog-auth-message" class="blog-auth-message">Sign in with Google as a Writer or Reader to read these stories.</p>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <p class="card-tag">Creativity</p>
+            <h3>Making room for better ideas</h3>
+            <p>Small rituals can create the space needed for meaningful work and fresh thinking.</p>
+            <a href="#blog" aria-label="Read Making room for better ideas">Read story →</a>
+          </article>
+          <article class="blog-card featured-card">
+            <p class="card-tag">Perspective</p>
+            <h3>The quiet power of starting small</h3>
+            <p>Progress does not need to be loud. It only needs a beginning and a little consistency.</p>
+            <a href="#blog" aria-label="Read The quiet power of starting small">Read story →</a>
+          </article>
+          <article class="blog-card">
+            <p class="card-tag">Lifestyle</p>
+            <h3>Notes from a slower morning</h3>
+            <p>A reflective morning can change the rhythm of an entire day.</p>
+            <a href="#blog" aria-label="Read Notes from a slower morning">Read story →</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div>
+        <p class="brand footer-brand">Ink &amp; Ideas</p>
+        <p>Stories, perspectives, and ideas from independent voices.</p>
+      </div>
+      <div id="about" class="footer-links">
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+      <p class="copyright">© 2026 Ink &amp; Ideas</p>
+    </footer>
+
+    <div id="auth-status" class="auth-status" role="status" aria-live="polite"></div>
+
+    <dialog id="role-dialog" class="role-dialog" aria-labelledby="role-title">
+      <form method="dialog" id="role-form">
+        <p class="eyebrow">One last step</p>
+        <h2 id="role-title">Choose your role</h2>
+        <p>Tell us how you will use Ink &amp; Ideas.</p>
+        <div class="role-options">
+          <button class="role-option" type="button" data-role="reader"><strong>Reader</strong><span>Discover and read stories.</span></button>
+          <button class="role-option" type="button" data-role="writer"><strong>Writer</strong><span>Share your own stories.</span></button>
+        </div>
+      </form>
+    </dialog>
+    <script type="module" src="firebase-auth.js"></script>
+  </body>
+</html>

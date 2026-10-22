@@ -1,0 +1,6 @@
+.firebase/
+.playwright/
+.playwright-cli/
+firebase-debug.log
+node_modules/
+.DS_Store
